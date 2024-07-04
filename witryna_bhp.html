@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>WITRYNA BHP BELLA</title>
+</head>
+<body>
+  <center>
+    <h1>WITRYNA BHP BELLA</h1>
+      <h2>Prosimy zapoznać się z treścią filmu</h2>
+      <video id="film_bhp" width="1280" height="720" controlList="nodownload">
+        <source src="film_bhp.mp4" type="video/mp4">
+      </video>
+
+      <script>
+        let vid = document.getElementById("film_bhp");
+
+        function klik() {
+          if (event.button==2) {
+            alert("Prawy przycisk myszy jest zablokowany!");
+          } else {
+            vid.play()
+          }
+        }
+        document.onmousedown=klik;
+      </script>
+  </center>
+</body>
+</html>

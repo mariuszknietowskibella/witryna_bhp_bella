@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WEBSITE OSH BELLA</title>
+</head>
+<body>
+  <center>
+    <h1>WEBSITE OSH BELLA</h1>
+      <h2>Please watch the content of the video</h2>
+      <video id="film_bhp" width="1280" height="720" controlList="nodownload">
+        <source src="film_bhp_eng.mp4" type="video/mp4">
+      </video>
+
+      <script>
+        let vid = document.getElementById("film_bhp");
+
+        function klik() {
+          if (event.button==2) {
+            alert("Right click of mouse is blocked!");
+          } else {
+            vid.play()
+          }
+        }
+        document.onmousedown=klik;
+      </script>
+  </center>
+</body>
+</html>
